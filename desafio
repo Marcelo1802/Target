@@ -1,0 +1,83 @@
+//Desafio Target
+//Linguagem: Kotlin
+
+
+/*1) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde,
+informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.*/
+
+/*fun isFibonacciNumber(n: Int): Boolean {
+    if (n < 0) return false
+    var a = 0
+    var b = 1
+    while (a <= n) {
+        if (a == n) return true
+        val temp = a
+        a = b
+        b = temp + b
+    }
+    return false
+}
+
+fun main() {
+    val testNumbers = listOf(8, 21, 34, 50, 55, 84, 144)
+    for (num in testNumbers) {
+        if (isFibonacciNumber(num)) {
+            println("$num pertence à sequência de Fibonacci.")
+        } else {
+            println("$num não pertence à sequência de Fibonacci.")
+        }
+    }
+}
+*/
+
+/*2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula,
+além de informar a quantidade de vezes em que ela ocorre.*/
+
+/*fun countLetterA(s: String): String {
+    val lowerCaseString = s.lowercase()
+    val count = lowerCaseString.count { it == 'a' }
+    return if (count > 0) {
+        "A letra 'a' aparece $count vez(es) na string."
+    } else {
+        "A letra 'a' não está presente na string."
+    }
+}
+
+fun main() {
+    print("Digite uma frase: ")
+    val userInput = readLine() ?: ""
+    println(countLetterA(userInput))
+}*/
+
+/*3) Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1;
+enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);*/
+
+/*fun main() {
+    val INDICE = 12
+    var SOMA = 0
+    var K = 1
+
+    while (K < INDICE) {
+        K = K + 1
+        SOMA += K
+    }
+
+    println(SOMA)
+}*/
+
+/*4) Descubra a lógica e complete o próximo elemento:
+a) 1, 3, 5, 7, 9 // pois é sequência de números ímpares
+b) 2, 4, 8, 16, 32, 64, 128 // pois é sequência de potências de 2
+c) 0, 1, 4, 9, 16, 25, 36, 49 // pois é sequência do número ao quadrado (0^2, 1^2)
+d) 4, 16, 36, 64, 100 // pois é sequência de numeros pares ao quadrado
+e) 1, 1, 2, 3, 5, 8, 13 // pois é sequência de Fibonacci
+f) 2,10, 12, 16, 17, 18, 19, 200  //Numeros que começa com a letra D */
+
+/* 5) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes.
+Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser.
+Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+Resposta:
+Ligue um dos interruptor e espere um pouco. Desligue ele e ligue um segundo interruptor. Vá até a sala.
+A lâmpada desligada e quente corresponde ao primeiro interruptor, a lâmpada acesa ao segundo e a lâmpada apagada e fria ao terceiro */
